@@ -1,0 +1,38 @@
+{
+  "version": "0.0.1",
+  "name": "simple-event-source",
+  "description": "JavaScript event source (pubsub) module.",
+  "homepage" : "https://github.com/dfkaye/simple-event-source",
+  "author": {
+    "name": "david kaye (@dfkaye)",
+    "email" : "dfkaye@yahoo.com"
+  },
+  "contributors": [
+    {
+      "name": "david kaye (@dfkaye)",
+      "email": "dfkaye@yahoo.com"
+    }
+  ],
+  "devDependencies": {
+    "tape": "~0.2.2"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dfkaye/simple-event-source.git"
+  },
+  "scripts": {
+    "test": "node ./test/suite.js"
+  },  
+  "testling": {
+    "files": "test/**/*.js",
+    "browsers" : [
+        "ie/6..latest",
+        "chrome/16..latest",
+        "firefox/3.5..latest",
+        "safari/4..latest",
+        "opera/11.0..latest",
+        "iphone/6", "ipad/6"
+    ]
+  },
+  "main": "./source.js"  
+}
