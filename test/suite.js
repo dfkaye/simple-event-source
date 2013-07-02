@@ -14,7 +14,7 @@ test('tap test - add, fire, and remove', function(t) {
      
     var listener = {};
      
-    listener.onTest = function (data) {
+    listener.onNoop = function (data) {
         t.fail('should not see this - not registering it to event source');
     };
      
@@ -24,7 +24,7 @@ test('tap test - add, fire, and remove', function(t) {
     };
      
     var tap = { context: listener, callback: listener.onTap }
-    var test = { context: listener, callback: listener.onTest }
+    var noop = { context: listener, callback: listener.onNoop }
      
     s.add('tap', tap);
     s.add('tap', tap);
@@ -37,7 +37,7 @@ test('tap test - add, fire, and remove', function(t) {
     });
     
     s.fire({
-        type: 'test',
+        type: 'noop',
         value: 'testing that event listener is not registered'
     });
     

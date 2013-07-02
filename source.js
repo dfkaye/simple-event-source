@@ -8,7 +8,9 @@
 */
 
 // src (get it?)
-module.exports = Source;
+
+// let's see if browserify can handle this
+if (module && module.exports) module.exports = Source;
 
 function Source() {
     this.listeners = {}

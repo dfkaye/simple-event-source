@@ -14,7 +14,7 @@
     }
   ],
   "devDependencies": {
-    "tape": "~0.2.2"
+    "tape": "~0.3.2"
   }, 
   "repository": {
     "type": "git",
@@ -26,12 +26,13 @@
   "testling": {
     "files": "test/**/*.js",
     "browsers" : [
-        "ie/6..latest",
-        "chrome/16..latest",
-        "firefox/3.5..latest",
-        "safari/4..latest",
-        "opera/11.0..latest",
-        "iphone/6", "ipad/6"
+      "ie/6..latest",
+      "chrome/20..latest",
+      "firefox/10..latest",
+      "safari/5..latest",
+      "opera/11.0..latest",
+      "iphone/6", 
+      "ipad/6"
     ]
   },
   "main": "./source.js"  
